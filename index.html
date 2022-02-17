@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#a").css("color", "lightblue").slideUp(2000).slideDown(2000);
+  });
+});
+</script>
+</head>
+<body  bgcolor = lightgreen>
+<h1>REGISTRY DETAILS</h1>
+<div id = "a">  
+<form action="insertSDetails.jsp">
+      
+    Name: <input type="text" name="Name" /><br><br>
+ 
+   Content: <input type="text" name="Content" /><br><br>
+           
+    Quantity: <input type="text" name="Quantity" /><br><br>
+ 
+    Price: <input type="text" name="price" /><br><br>
+
+    Rating: <input type="text" name="Rating" /><br><br>
+        
+   
+    <input type="submit" value="Insert Details" />
+    
+    </form>
+ </div>
+<br><br>
+
+
+<button>slide show</button>
+
+</body>
+</html>
+
